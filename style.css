@@ -14,3 +14,9 @@ body {background-color:pink;
       border:5px solid blue;
       border-radius:20px;
      }
+ul{List_Style_type:none;
+  }
+li{display:inline;
+   padding:4px;
+  }
+
