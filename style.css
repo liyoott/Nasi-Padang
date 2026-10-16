@@ -50,6 +50,6 @@ ul li:hover {
   transform: translateY(-3px); 
 }
 
-h2 {text_align:center;
+h2 {text-align:center;
     color:brown;
    }
