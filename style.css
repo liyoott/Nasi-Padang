@@ -9,13 +9,14 @@ body {
   background-color: #f4f4f4;
 }
 
+/* Container Loading Pixel Overlay */
 #pixel-loader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #1a1a2e; 
+  background-color: #1a1a2e; /* Warna latar retro/dark */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,17 +25,20 @@ body {
   transition: opacity 0.5s ease;
 }
 
+/* Transisi Fade Out saat Selesai Loading */
 #pixel-loader.fade-out {
   opacity: 0;
   pointer-events: none;
 }
 
+/* Box Konten Loading */
 .loader-content {
   text-align: center;
-  font-family: 'Press Start 2P', monospace; 
+  font-family: 'Press Start 2P', monospace; /* Font Pixel */
   color: #e94560;
 }
 
+/* Teks Loading Pixel */
 .pixel-text {
   font-size: 24px;
   letter-spacing: 2px;
@@ -43,6 +47,7 @@ body {
   text-shadow: 3px 3px 0px #000;
 }
 
+/* Animasi Berkedip pada Titik-Titik (...) */
 .dots {
   display: inline-block;
   animation: blink 1.2s infinite steps(1);
@@ -55,6 +60,7 @@ body {
   100% { opacity: 0; }
 }
 
+/* Progress Bar Gaya Pixel */
 .pixel-bar {
   width: 260px;
   height: 20px;
@@ -72,12 +78,14 @@ body {
   animation: loadProgress 1.5s forwards ease-in-out;
 }
 
+/* Animasi Progress Bar Mengisi */
 @keyframes loadProgress {
   0% { width: 0%; }
   50% { width: 60%; }
   100% { width: 100%; }
 }
 
+/* Styling Tambahan Konten Utama Web */
 .main-content {
   padding: 40px;
   text-align: center;
@@ -95,8 +103,9 @@ body {
   line-height: 1.6;
 }
 
+/* Navbar */
 header {
-  background-color: #8B0000; 
+  background-color: #8B0000; /* Warna merah hangat khas Padang */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -135,12 +144,14 @@ header {
   color: #fca311;
 }
 
+/* Layout Container */
 .container {
   max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1.5rem;
 }
 
+/* Section Profil & Filosofi */
 .about-section {
   display: flex;
   flex-direction: column;
@@ -193,6 +204,7 @@ header {
   color: #555555;
 }
 
+/* Section Canva Presentasi */
 .presentation-section {
   background: #ffffff;
   padding: 2rem;
