@@ -1,4 +1,90 @@
-/* Reset Dasar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+#pixel-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a1a2e; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#pixel-loader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-content {
+  text-align: center;
+  font-family: 'Press Start 2P', monospace; 
+  color: #e94560;
+}
+
+.pixel-text {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px #000;
+}
+
+.dots {
+  display: inline-block;
+  animation: blink 1.2s infinite steps(1);
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  33% { opacity: 0.5; }
+  66% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.pixel-bar {
+  width: 260px;
+  height: 20px;
+  background-color: #0f3460;
+  border: 4px solid #fff;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 4px 4px 0px #000;
+}
+
+.pixel-progress {
+  width: 0%;
+  height: 100%;
+  background-color: #e94560;
+  animation: loadProgress 1.5s forwards ease-in-out;
+}
+
+@keyframes loadProgress {
+  0% { width: 0%; }
+  50% { width: 60%; }
+  100% { width: 100%; }
+}
+
+.main-content {
+  padding: 40px;
+  text-align: center;
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
