@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pagi Sore Game</title>
   
-  <!-- Import Font Pixel dari Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -16,7 +15,6 @@
 </head>
 <body>
 
-  <!-- Screen Loading Pixel -->
   <div id="pixel-loader">
     <div class="loader-content">
       <h1 class="pixel-text">LOADING<span class="dots">...</span></h1>
@@ -26,22 +24,18 @@
     </div>
   </div>
 
-  <!-- Konten Utama Web Anda -->
   <main class="main-content">
     <h1>Pagi Sore Game</h1>
     <p>Selamat datang di website!</p>
   </main>
 
-  <!-- Script untuk Menghilangkan Loading Screen -->
   <script>
     window.addEventListener('load', () => {
       const loader = document.getElementById('pixel-loader');
       
-      // Beri sedikit jeda 1.5 detik agar animasi loading terlihat
       setTimeout(() => {
         loader.classList.add('fade-out');
         
-        // Hapus elemen loader dari DOM setelah animasi fade-out selesai
         setTimeout(() => {
           loader.style.display = 'none';
         }, 500);
