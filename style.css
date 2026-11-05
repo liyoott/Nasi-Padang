@@ -98,9 +98,8 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
 header {
-  background-color: #8B0000; /* Warna merah hangat khas Padang */
+  background-color: #8B0000; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -139,14 +138,12 @@ header {
   color: #fca311;
 }
 
-/* Layout Container */
 .container {
   max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1.5rem;
 }
 
-/* Section Profil & Filosofi */
 .about-section {
   display: flex;
   flex-direction: column;
@@ -199,7 +196,6 @@ header {
   color: #555555;
 }
 
-/* Section Canva Presentasi */
 .presentation-section {
   background: #ffffff;
   padding: 2rem;
